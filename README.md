@@ -1,29 +1,25 @@
-ei project tar name BlueSky Residences.
+🏢 BlueSky Residences
+A Modern Real Estate Booking Platform
 
-eti ekti modern Hotel Booking Platform.
+Summary:
+BlueSky Residences is a modern and user-friendly web platform where users can easily discover and book luxurious apartments and real estate units. The project utilizes React.js and Tailwind CSS for the frontend and Express.js and MongoDB for the backend. Users can filter, search, book, and review available units. An admin dashboard allows full control over bookings and user management.
 
-eta prothome navbar royeche,tar or slide system banner royeche.
+Key Features:
 
-home a 6 ta card dekhano hoiuache room er tar por see more rooms namer ekta button dewa hoise oi tai click korle rooms a nia jabe jekhane sob room gula thakbe .
+Fully Responsive & Modern UI
 
-tar por Why Choose Us? section ache.
+Real-time Booking Management
 
-tar por Upcoming Events & Offers ache.
+Secure Authentication (JWT)
 
-tar por map dewa hoiache.
+Role-based Dashboard (Admin & User)
 
-tar por footer ache.
+Reviews & Feedback System
 
-room book korar jonno rooms a gia card a click kora lagbe tar por rooms details a nia jabe,sekhane book naw ekta button thakbe oi khane click korle ekta modal asbe oi modal a date pike kore room confirm korte hobe.confirm kora room my booking room a thakbe table akare.
+Dynamic Data with MongoDB
 
-ei priject ta korte bebohar kora hoise:
-react
-js
-tailwind
-daisyui
-server side a bebohar kora hoise:
-node js
-express js
-mongodb
+Tech Stack:
+React.js, Tailwind CSS,daisyui, Express.js,node js, MongoDB, React Router
+
 
 live link: https://hotel-booking-project-aa7bf.web.app/
