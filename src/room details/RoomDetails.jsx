@@ -16,7 +16,7 @@ const RoomDetails = () => {
   useEffect(() => {
     
     setIsLoading(true);
-    axios.get(`http://localhost:5000/rooms/${id}`)
+    axios.get(`https://hotel-booking-server-zeta-one.vercel.app/rooms/${id}`)
       .then(res => {
         setRoom(res.data);
         setIsLoading(false);  

@@ -1,5 +1,6 @@
-import React from 'react';
-import errorLottieData from '.././assets/lottie/Animation - 1746817795434.json'
+import Lottie from "lottie-react";
+
+import errorAnimation from '../assets/lottie/error.json';
 const ErrorPage = () => {
     return (
         <div className="error-page">
@@ -7,7 +8,7 @@ const ErrorPage = () => {
         <p>Sorry, the page you're looking for doesn't exist.</p>
         <a href="/">Go Back to Home</a>
         <div>
-          <Lottie animationData={errorLottieData}></Lottie>
+          <Lottie animationData={errorAnimation}></Lottie>
         </div>
       </div>
     );

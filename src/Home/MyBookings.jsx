@@ -1,19 +1,23 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom'; 
+import AuthContext from '../context/AuthContext';  // বড় হাতের A দিয়ে import করলে ভালো
 
 const MyBookings = () => {
+  const { user } = useContext(AuthContext);
   const [bookings, setBookings] = useState([]);
   const navigate = useNavigate();
 
-//   useEffect(() => {
-//     axios.get(`http://localhost:5000/bookings/${id}`)
-//       .then(res => setBookings(res.data));
-//   }, []);
+  useEffect(() => {
+    if (!user?._id) return;  // user id আছে কিনা চেক কর
 
-  
+    axios.get(`https://hotel-booking-server-zeta-one.vercel.app/bookings?userId=${user._id}`)
+      .then(res => setBookings(res.data))
+      .catch(err => console.log(err));
+  }, [user?._id]);
+
   const handleBookingClick = (id) => {
-    navigate(`/booking-details/${id}`); 
+    navigate(`/booking-details/${id}`);
   };
 
   return (
