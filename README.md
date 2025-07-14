@@ -19,7 +19,7 @@ Reviews & Feedback System
 Dynamic Data with MongoDB
 
 Tech Stack:
-React.js, Tailwind CSS,daisyui, Express.js,node js, MongoDB, React Router
+React.js, Tailwind CSS,daisyui,Firebase, Express.js,node js, MongoDB, React Router
 
 
 live link: https://hotel-booking-project-aa7bf.web.app/
