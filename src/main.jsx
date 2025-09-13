@@ -37,12 +37,12 @@ const router = createBrowserRouter([
       {
         path: "myBookings",
         element:<PrivateRoute><MyBookings></MyBookings></PrivateRoute>,
-        // loader: ({params}) => fetch(`https://hotel-booking-server-zeta-one.vercel.app/bookings/rooms/${params.id}`)
+        // loader: ({params}) => fetch(`https://hotel-booking-serve.vercel.app/bookings/rooms/${params.id}`)
       },
       {
         path: "/rooms/:id",
         element:<PrivateRoute><RoomDetails></RoomDetails></PrivateRoute>,
-        loader: ({params}) => fetch(`https://hotel-booking-server-zeta-one.vercel.app/rooms/${params.id}`)
+        loader: ({params}) => fetch(`https://hotel-booking-serve.vercel.app/rooms/${params.id}`)
       },
       {
         path: "register",

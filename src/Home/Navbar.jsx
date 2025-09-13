@@ -52,12 +52,14 @@ const Navbar = () => {
             {links}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">
+        
+            <a className="btn btn-ghost text-xl">
           <img className="w-12" src={logo} alt="" />
-          <h3 className="text-3xl">BlueSky Residences</h3>
+          <h3 className="lg:text-3xl">BlueSky Residences</h3>
         </a>
+        
       </div>
-      <div className="navbar-center hidden  lg:flex">
+      <div className="navbar-center hidden  lg:flex ">
         <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
       <div className="navbar-end">
@@ -66,7 +68,7 @@ const Navbar = () => {
           <button onClick={handleSignOut} className="btn">Sign Out</button>
           </> : <>
         
-        <Link to="/register">Register</Link>
+        
         <Link to="/signIn">
         <button className="btn">Sign In</button></Link>
         </>

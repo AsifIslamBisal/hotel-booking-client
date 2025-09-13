@@ -3,7 +3,7 @@ import loginLottieJSON from '../assets/lottie/login.json'
 import Lottie from 'lottie-react';
 import authContext from '../context/AuthContext';
 
-import { useLocation, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import GoogleLogin from './GoogleLogin';
 import { toast } from 'react-toastify';
 
@@ -64,8 +64,14 @@ const SignIn = () => {
                 <button className="btn btn-primary">Login</button>
               </div>
             </form>
-            <GoogleLogin></GoogleLogin>
+            
+            
+              <GoogleLogin></GoogleLogin>
+            <div className=' pl-24'>
+              <p className='px-6'><small>New Hear? <Link to="/register" className='text-blue-600'>Create an account</Link></small></p>
+            </div>
           </div>
+          
         </div>
       </div>
     );

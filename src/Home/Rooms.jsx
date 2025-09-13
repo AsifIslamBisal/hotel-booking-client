@@ -3,12 +3,12 @@ import RoomCard from './RoomCard';
 
 const Rooms = () => {
 
-    const [rooms, setrooms] = useState([]);
+    const [rooms, setRooms] = useState([]);
 
     useEffect(() => {
-        fetch('https://hotel-booking-server-zeta-one.vercel.app/rooms')
+        fetch('https://hotel-booking-serve.vercel.app/rooms')
         .then(res => res.json())
-        .then(data => setrooms(data))
+        .then(data => setRooms(data))
     },[])
 
     return (

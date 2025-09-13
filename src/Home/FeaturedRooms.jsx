@@ -5,7 +5,7 @@ const FeaturedRooms = () => {
   const [rooms, setRooms] = useState([]);
 
   useEffect(() => {
-    fetch("https://hotel-booking-server-zeta-one.vercel.app/rooms") 
+    fetch("https://hotel-booking-serve.vercel.app/rooms") 
       .then((res) => res.json())
       .then((data) => setRooms(data.slice(0, 6))); 
   }, []);

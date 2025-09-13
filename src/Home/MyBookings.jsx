@@ -11,7 +11,7 @@ const MyBookings = () => {
   useEffect(() => {
     if (!user?._id) return;  // user id আছে কিনা চেক কর
 
-    axios.get(`https://hotel-booking-server-zeta-one.vercel.app/bookings?userId=${user._id}`)
+    axios.get(`https://hotel-booking-serve.vercel.app/bookings?userId=${user._id}`)
       .then(res => setBookings(res.data))
       .catch(err => console.log(err));
   }, [user?._id]);
